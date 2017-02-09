@@ -10,4 +10,11 @@
         </div>
     </div>
 </div>
+
+{% if images %}
+	{% for image in images %}
+		<img src="{{ image.url }}" />
+	{% endfor %}
+{% endif %}
+
 {% endblock %}
